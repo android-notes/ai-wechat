@@ -98,9 +98,9 @@ def run(args):
         set_flow_exception(None)
     except Exception as e:
         set_flow_exception(e)
-    ___l(26, "执行Python代码 <s>消息数据[\"type\"] = 消息Item项.name\r\n消息数据.pop(\"msg\",None)</s>", {'debug':False})
+    ___l(26, "执行Python代码 <s>消息数据[\"type\"] = 消息Item项.name[:20]\r\n消息数据.pop(\"msg\",None)</s>", {'debug':False})
     # Insert
-    消息数据["type"] = 消息Item项.name
+    消息数据["type"] = 消息Item项.name[:20]
     消息数据.pop("msg",None)
     ___l(27, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
     return {"消息项数据":(消息数据),}
