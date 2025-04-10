@@ -89,62 +89,10 @@ def run(args):
         set_flow_exception(None)
     except Exception as e:
         set_flow_exception(e)
-    ___l(24, "拦截缩进的指令中的错误", {'debug':False})
-    try:
-        pass
-        ___l(25, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
-        元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('dd193fc3-fabb-4234-a977-e560664abe17', "群消息-链接/图片/名片-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
-        ___l(26, "执行Python代码 <s>消息数据[\"type\"] = 'link'</s>", {'debug':False})
-        # Insert
-        消息数据["type"] = 'link'
-        ___l(27, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
-        return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
-    except Exception as e:
-        set_flow_exception(e)
-    ___l(28, "拦截缩进的指令中的错误", {'debug':False})
-    try:
-        pass
-        ___l(29, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
-        元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('fd439287-7b70-4b7f-9074-5b5388c60cdf', "消息-表情-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
-        ___l(30, "执行Python代码 <s>消息数据[\"type\"] = '表情'</s>", {'debug':False})
-        # Insert
-        消息数据["type"] = '表情'
-        ___l(31, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
-        return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
-    except Exception as e:
-        set_flow_exception(e)
-    ___l(32, "拦截缩进的指令中的错误", {'debug':False})
-    try:
-        pass
-        ___l(33, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
-        元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('ebc1fc49-abf6-48e7-818d-a4b3fb674e40', "消息-转发-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
-        ___l(34, "执行Python代码 <s>消息数据[\"type\"] = '转发'</s>", {'debug':False})
-        # Insert
-        消息数据["type"] = '转发'
-        ___l(35, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
-        return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
-    except Exception as e:
-        set_flow_exception(e)
-    ___l(36, "拦截缩进的指令中的错误", {'debug':False})
-    try:
-        pass
-        ___l(37, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
-        元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('87c81870-4ba6-4048-af8a-667409c368aa', "消息-语音-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
-        ___l(38, "执行Python代码 <s>消息数据[\"type\"] = 'voice'</s>", {'debug':False})
-        # Insert
-        消息数据["type"] = 'voice'
-        ___l(39, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
-        return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
-    except Exception as e:
-        set_flow_exception(e)
-    ___l(40, "执行Python代码 <s>消息数据[\"type\"] = 'unknown'</s>", {'debug':False})
+    ___l(24, "执行Python代码 <s>消息数据[\"type\"] = 'unknown'</s>", {'debug':False})
     # Insert
     消息数据["type"] = 'unknown'
-    ___l(41, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
+    ___l(25, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
     return {"消息项数据":(消息数据),}
 
 @call_flow_wrapper("获取消息项")

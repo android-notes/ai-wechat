@@ -34,13 +34,6 @@ def run(args):
         else: # ___l(6, )
             ___l(6, "前面所有条件都不成立时执行缩进的指令", {'debug':False})
             pass
-            ___l(7, "调用流程 <s><flow>获取消息项</flow></s>并传递参数<v>消息Item项</v>:<s>消息项</s> ", {'debug':False})
-            ___call_flow_return = call_flow("获取消息项", {"消息Item项":消息项,})
-            消息项数据 = None
-            if ___call_flow_return:
-                pass
-                消息项数据 = ___call_flow_return.get('消息项数据', None)
-            pass
         ___l(8, "在列表<v>消息列表数据</v><s>尾部</s>添加数据<s>消息项数据</s>", {'debug':False})
         add_to_list(消息列表数据, 消息项数据, len(消息列表数据))
         ___l(9, "输出<s>消息项数据</s>", {'debug':False})
