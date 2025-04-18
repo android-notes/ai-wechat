@@ -45,8 +45,6 @@ def run(args):
             pass
         ___l(8, "在列表<v>消息列表数据</v><s>尾部</s>添加数据<s>消息项数据</s>", {'debug':False})
         add_to_list(消息列表数据, 消息项数据, len(消息列表数据))
-        ___l(9, "输出<s>消息项数据</s>", {'debug':False})
-        print_to_app(消息项数据, {"renderHtml":True})
     ___l(10, "结束当前流程并返回参数<v>消息数据列表</v>:<s>消息列表数据</s>", {'debug':False})
     return {"消息数据列表":(消息列表数据),}
 

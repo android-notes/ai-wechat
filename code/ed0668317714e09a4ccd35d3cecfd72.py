@@ -30,9 +30,9 @@ def run(args):
         
         ___l(5, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
         return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
+        set_flow_exception(None, None)
     except Exception as e:
-        set_flow_exception(e)
+        set_flow_exception(e, traceback.format_exc())
     ___l(6, "拦截缩进的指令中的错误", {'debug':False})
     try:
         pass
@@ -60,9 +60,9 @@ def run(args):
             
         ___l(14, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
         return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
+        set_flow_exception(None, None)
     except Exception as e:
-        set_flow_exception(e)
+        set_flow_exception(e, traceback.format_exc())
     ___l(15, "拦截缩进的指令中的错误", {'debug':False})
     try:
         pass
@@ -74,33 +74,33 @@ def run(args):
         
         ___l(18, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
         return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
+        set_flow_exception(None, None)
     except Exception as e:
-        set_flow_exception(e)
+        set_flow_exception(e, traceback.format_exc())
     ___l(19, "拦截缩进的指令中的错误", {'debug':False})
     try:
         pass
         ___l(20, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
         元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('65ff4a08-11d5-42f0-a935-5f2bb4106332', "消息-纯文本-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
-        ___l(21, "执行Python代码 <s>消息数据[\"type\"] = 'text'\r\n消息数据[\"msg\"] = 元素.name\r\n消息数据[\"nick_name\"] = 对方名称</s>", {'debug':False})
+        ___l(21, "执行Python代码 <s>消息数据[\"type\"] = 'text'\r\n消息数据[\"content\"] = 元素.name\r\n消息数据[\"nick_name\"] = 对方名称</s>", {'debug':False})
         # Insert
         消息数据["type"] = 'text'
-        消息数据["msg"] = 元素.name
+        消息数据["content"] = 元素.name
         消息数据["nick_name"] = 对方名称
         ___l(22, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
         return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
+        set_flow_exception(None, None)
     except Exception as e:
-        set_flow_exception(e)
+        set_flow_exception(e, traceback.format_exc())
     ___l(23, "拦截缩进的指令中的错误", {'debug':False})
     try:
         pass
         ___l(24, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
         元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('1c5a10c7-a4b9-4318-8997-7b4b653ac65e', "消息-带引用的文本-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
-        ___l(25, "执行Python代码 <s>消息数据[\"type\"] = 'text'\r\n消息数据[\"msg\"] = 元素.name\r\n消息数据[\"nick_name\"] = 对方名称</s>", {'debug':False})
+        ___l(25, "执行Python代码 <s>消息数据[\"type\"] = 'text'\r\n消息数据[\"content\"] = 元素.name\r\n消息数据[\"nick_name\"] = 对方名称</s>", {'debug':False})
         # Insert
         消息数据["type"] = 'text'
-        消息数据["msg"] = 元素.name
+        消息数据["content"] = 元素.name
         消息数据["nick_name"] = 对方名称
         ___l(26, "获取<s>消息Item项</s>的<s>子孙元素</s>并将对象保存到<v>元素</v>", {'debug':False})
         元素 = get_associated_win_element2(消息Item项,'子孙元素', ElementDescriptor('c5e73841-5719-453e-b41a-636ba9350605', "消息-被引用的纯文本-子孙元素"), {"clickOption":"鼠标点击","hoverOption":"鼠标悬停","clickType":"单击","mouseKey":"左键","modifierKey":"无","delay":"0","wait":"0","position":"随机","inputType":"模拟人工输入","eng":False,"append":False,"tab":False,"enter":False,"click":True,"focusTimeout":"1"})
@@ -110,13 +110,13 @@ def run(args):
         
         ___l(28, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
         return {"消息项数据":(消息数据),}
-        set_flow_exception(None)
+        set_flow_exception(None, None)
     except Exception as e:
-        set_flow_exception(e)
-    ___l(29, "执行Python代码 <s>消息数据[\"type\"] = 消息Item项.name[:20]\r\n消息数据.pop(\"msg\",None)\r\n消息数据[\"nick_name\"] = 对方名称</s>", {'debug':False})
+        set_flow_exception(e, traceback.format_exc())
+    ___l(29, "执行Python代码 <s>消息数据[\"type\"] = 消息Item项.name[:20]\r\n消息数据.pop(\"content\",None)\r\n消息数据[\"nick_name\"] = 对方名称</s>", {'debug':False})
     # Insert
     消息数据["type"] = 消息Item项.name[:20]
-    消息数据.pop("msg",None)
+    消息数据.pop("content",None)
     消息数据["nick_name"] = 对方名称
     ___l(30, "结束当前流程并返回参数<v>消息项数据</v>:<s>消息数据</s>", {'debug':False})
     return {"消息项数据":(消息数据),}
